@@ -1,0 +1,35 @@
+@import "breakpoints";
+.spacer {
+  flex: 1 1 auto;
+}
+
+.container {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and #{$breakpoint-xsmall} {
+    .favorite-screen {
+      display: none;
+    }
+    height: 4rem;
+  }
+}
+
+.container-mobile {
+  display: none;
+  @media screen and #{$breakpoint-xsmall} {
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+  }
+}
+
+mat-toolbar {
+  position: relative;
+  z-index: 10;
+
+  @media screen and #{$breakpoint-xsmall} {
+    position: fixed;
+  }
+}

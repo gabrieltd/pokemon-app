@@ -1,0 +1,15 @@
+img {
+  max-width: 90px;
+  max-height: 90px;
+}
+
+.mat-mdc-row .mat-mdc-cell {
+  // border-bottom: 1px solid transparent;
+  // border-top: 1px solid transparent;
+  cursor: pointer;
+  height: 96px;
+}
+
+.mat-mdc-row:hover .mat-mdc-cell {
+  background-color: #595959;
+}

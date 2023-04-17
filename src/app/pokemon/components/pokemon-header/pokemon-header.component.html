@@ -1,0 +1,18 @@
+<mat-toolbar>
+	<mat-toolbar-row class="container">
+		<span>Devsafío Challenge</span>
+		<div class="favorite-screen">
+			<app-pokemon-favorite />
+		</div>
+
+		<button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
+			[matTooltip]="this.sidenavIsOpen() ? 'Esconder detalles': 'Mostrar detalles'" (click)="toggleSidenav()">
+			<mat-icon>menu</mat-icon>
+		</button>
+	</mat-toolbar-row>
+	<mat-toolbar-row class="container-mobile">
+		<div class="favorite-mobile">
+			<app-pokemon-favorite />
+		</div>
+	</mat-toolbar-row>
+</mat-toolbar>

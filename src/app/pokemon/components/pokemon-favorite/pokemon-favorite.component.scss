@@ -1,0 +1,33 @@
+@import "breakpoints";
+
+.favorite-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+
+  img {
+    width: 60px;
+    height: 60px;
+    border: none;
+    padding: 0 1rem;
+  }
+}
+
+mat-card {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  transition: background-color 0.15s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: #222;
+  }
+
+  min-width: 15rem;
+  @media screen and #{$breakpoint-xsmall} {
+    // display: none;
+    height: 3.5rem;
+  }
+}

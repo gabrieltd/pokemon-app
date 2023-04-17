@@ -1,0 +1,40 @@
+<div class="container">
+
+
+	<div *ngIf="(pokemonDetail | async) as pokemon; else noActive" class="active">
+		<img [src]="pokemon.imgArtwork" (error)="onImageError($event)" />
+
+		<table class="custom-table">
+			<tr>
+				<th class="table-propertie" data-test="pokemon-dialog-name">Nombre:</th>
+				<td data-test="pokemon-detail-name">{{pokemon.name! | capitalize}}</td>
+			</tr>
+			<tr>
+				<th class="table-propertie">Peso:</th>
+				<td>{{pokemon.weight}} hg</td>
+			</tr>
+			<tr>
+				<th class="table-propertie">Estatura:</th>
+				<td>{{pokemon.height}} dm</td>
+			</tr>
+
+			<tr>
+				<th class="table-propertie">Tipo: </th>
+				<td>{{pokemon.type?.join(', ')! | capitalize}}</td>
+			</tr>
+		</table>
+		<button mat-stroked-button (click)="selectFavorite(pokemon)">
+			<span data-test="select-favorite-btn">Seleccionar favorito</span>
+			<mat-icon>stars</mat-icon></button>
+	</div>
+
+	<ng-template #noActive>
+		<div class="no-active">
+
+			<span>Selecciona un pokémon para sus detalles</span>
+		</div>
+	</ng-template>
+
+	<mat-progress-bar mode="indeterminate"
+		[ngStyle]="{'visibility': (isLoading | async) ? 'visible': 'hidden' }"></mat-progress-bar>
+</div>
