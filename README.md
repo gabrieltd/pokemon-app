@@ -1,4 +1,4 @@
-### [Live Demo](https://angular-realworld.netlify.app/)
+### [Live Demo](https://gabrieltd.github.io/pokemon-app/)
 
 # Pokemon App
 
