@@ -35,6 +35,8 @@ La aplicación estará disponible en http://localhost:4200/.
 
 ## Funcionalidades
 
+Esta aplicación utiliza NgRx para manejar el estado global y Angular Material para UI.
+
 - Lista de Pokémon: La aplicación muestra una tabla con todos los pokémon disponibles en la PokeAPI de forma paginada. Es posible filtrar los pokémon utilizando el campo de búsqueda proporcionado.
 
 - Detalles del Pokémon: Al hacer clic en un pokémon de la lista, se mostrará su información detallada en el panel de la derecha.
@@ -81,6 +83,10 @@ src/
 ├── assets			  #Archivos estáticos (imágenes, iconos, etc.)
 └── styles			  #Estilos SCSS utilizados en la app
 ```
+
+La siguiente imagen muestra la organización de los componentes en la aplicación:
+
+![Wireframe app](/src/assets/wireframe.png)
 
 ## E2E Testing
 
