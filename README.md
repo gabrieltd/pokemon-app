@@ -15,7 +15,7 @@ A continuación se explican los pasos para instalar la aplicación.
 1. Clonar el repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/proyecto-pokedex.git
+git clone https://github.com/gabrieltd/pokemon-app
 ```
 
 2. Abrir una terminal en la carpeta del proyecto e instalar las dependencias:
