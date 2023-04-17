@@ -57,7 +57,11 @@ La estructura del proyecto sigue las recomendaciones generales de Angular. A con
 ```bash
 src/
 ├── app
+<<<<<<< HEAD
 │   ├── pokemon 		#Módulo de Pokémon
+=======
+│   ├── pokemon 			#Módulo de Pokémon
+>>>>>>> 831077a7cd421af30ccb8dbe031770c8518186f4
 │   │   ├── components		#Componentes específicos del módulo
 │   │   │   ├── pokemon-detail
 │   │   │   ├── pokemon-favorite
@@ -66,18 +70,31 @@ src/
 │   │   │   ├── pokemon-search
 │   │   │   └── pokemon-summary
 │   │   ├── interfaces		#Interfaces y tipos generales del módulo
+<<<<<<< HEAD
 │   │   ├── pages		#Vista principal de la app
 │   │   └── services		#Servicios específicos del módulo
 │   ├── shared			#Recursos compartidos en toda la app
 │   │   └── pipes
 │   └── store			#Configuración y lógica del store de la app
+=======
+│   │   ├── pages			#Vista principal de la app
+│   │   └── services		#Servicios específicos del módulo
+│   ├── shared				#Recursos compartidos en toda la app
+│   │   └── pipes
+│   └── store				#Configuración y lógica del store de la app
+>>>>>>> 831077a7cd421af30ccb8dbe031770c8518186f4
 │       ├── actions
 │       ├── effects
 │       ├── models
 │       ├── reducers
 │       └── selectors
+<<<<<<< HEAD
 ├── assets			#Archivos estáticos (imágenes, iconos, etc.)
 └── styles			#Estilos SCSS utilizados en la app
+=======
+├── assets					#Archivos estáticos (imágenes, iconos, etc.)
+└── styles					#Estilos SCSS utilizados en la app
+>>>>>>> 831077a7cd421af30ccb8dbe031770c8518186f4
 ```
 
 ## E2E Testing
