@@ -1,0 +1,15 @@
+<mat-card class="card">
+	<mat-card-content (click)="openDialog()" *ngIf="(favoritePokemon$ | async) as pokemon; else noFavorite">
+		<div class="favorite-container">
+			<small>Favorito: </small>
+			<img [src]="pokemon.imgSprite" alt="" (error)="onImageError($event)" />
+			<small data-test="pokemon-favorite-name">{{ pokemon.name! | capitalize}}</small>
+		</div>
+	</mat-card-content>
+
+	<ng-template #noFavorite>
+		<div class="favorite-container">
+			<small>Sin Favorito</small>
+		</div>
+	</ng-template>
+</mat-card>

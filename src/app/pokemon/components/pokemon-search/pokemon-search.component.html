@@ -1,0 +1,10 @@
+<mat-form-field class="example-full-width" appearance="fill">
+	<mat-label>Buscar Pokémon</mat-label>
+	<input matInput type="text" placeholder="Ej. Charizard" [formControl]="searchControl" (keyup)="applyFilter()"
+		[matAutocomplete]="auto" data-test="pokemon-search" />
+	<mat-autocomplete #auto="matAutocomplete" (optionSelected)="foo($event)">
+		<mat-option *ngFor="let option of filteredOptions | async | slice : 0 : 5" [value]="option | capitalize">
+			{{ option | capitalize }}
+		</mat-option>
+	</mat-autocomplete>
+</mat-form-field>

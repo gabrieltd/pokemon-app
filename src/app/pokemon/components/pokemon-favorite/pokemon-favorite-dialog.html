@@ -1,0 +1,28 @@
+<div class="container">
+
+	<div *ngIf="(favoritePokemon$ | async) as pokemon" class="active">
+		<img [src]="pokemon.imgArtwork" (error)="onImageError($event)" />
+
+		<table class="custom-table">
+			<tr>
+				<th class="table-propertie">Name:</th>
+				<td data-test="pokemon-dialog-name">{{pokemon.name! | capitalize}}</td>
+			</tr>
+			<tr>
+				<th class="table-propertie">Peso:</th>
+				<td>{{pokemon.weight}} hg</td>
+			</tr>
+			<tr>
+				<th class="table-propertie">Estatura:</th>
+				<td>{{pokemon.height}} dm</td>
+			</tr>
+
+			<tr>
+				<th class="table-propertie">Tipo: </th>
+				<td>{{pokemon.type?.join(', ')! | capitalize}}</td>
+			</tr>
+		</table>
+
+	</div>
+
+</div>

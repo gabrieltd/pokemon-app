@@ -1,0 +1,15 @@
+<app-pokemon-header />
+<mat-sidenav-container>
+	<mat-sidenav mode="side" #sidenav position="end" class="sidenav" [autoFocus]="false">
+
+
+		<app-pokemon-detail />
+
+	</mat-sidenav>
+	<mat-sidenav-content>
+		<app-pokemon-list />
+		<div class="spacer"></div>
+		<app-pokemon-summary />
+	</mat-sidenav-content>
+
+</mat-sidenav-container>
